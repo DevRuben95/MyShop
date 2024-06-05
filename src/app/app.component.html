@@ -1,6 +1,7 @@
 
 
-<!--
-<app-shopping-cart> </app-shopping-cart> -->
+<app-header (evento)="showProducto()"></app-header>
 
-<app-catalog> </app-catalog>
+<app-shopping-cart  *ngIf="showItems"> </app-shopping-cart>
+
+ <app-catalog> </app-catalog>

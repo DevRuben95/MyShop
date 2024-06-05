@@ -41,6 +41,7 @@ export class ShoppingCartComponent implements OnInit {
    }
    togleItemVisibility(){
     this.showItems=!this.showItems;
+
    }
 
 
