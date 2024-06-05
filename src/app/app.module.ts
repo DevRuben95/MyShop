@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ShoppingCartItemComponent } from './shopping-cart/shopping-cart-item.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { CatalogProductComponent } from './catalog/catalog-product.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ShoppingCartComponent,
-    ShoppingCartItemComponent
+    ShoppingCartItemComponent,
+    CatalogComponent,
+    CatalogProductComponent
   ],
   imports: [
     BrowserModule,

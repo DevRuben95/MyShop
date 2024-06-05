@@ -16,6 +16,7 @@ export class ShoppingCartItemComponent implements OnInit{
   //  }
     @Input()cartItem!: CartItem;
      @Output()CartItemDelete =new EventEmitter<void>();
+
    constructor(){}
      ngOnInit(): void {}
 

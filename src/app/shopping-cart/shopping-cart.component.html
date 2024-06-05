@@ -1,14 +1,18 @@
 <p class="title"> Mi Carrito</p>
 
+    <button class="toggle" (click)="togleItemVisibility()">
+     {{showItems?"Ocultar":"Mostrar"}}
+    </button>
 
+<ng-container *ngIf="showItems">
   <app-shopping-cart-item
-  *ngFor="let item of cartItem"
+  *ngFor="let item of cartItems"
   [cartItem]="item"
-  (CartItemDelete)="deleteItem(item)"
-  >
+  (CartItemDelete)="deleteItem(item)">
+  <!-- {{ console.log(item) }} -->
 </app-shopping-cart-item>
+</ng-container>
 
-
-<p class="total"> <span class="total-label"> total: </span> 000.00$</p>
+<p class="total"> <span class="total-label"> total: </span> {{total}}.00$</p>
 
 <button>  Finalizar pedido</button>
