@@ -11,22 +11,28 @@ export class CatalogServiceService {
   product:Product[] =[{
     imageUrl:'audifono.jpg',
     name:'audifono',
-    price:50
+    price:50,
+    id:1
    },
    {
     imageUrl:'monitor.jpg',
     name:'monitor',
-    price:66
+    price:66,
+    id:2
    },
    {
     imageUrl:'teclado.jpg',
     name:'teclado',
-    price:589
+    price:589,
+    id:3
    },]
 
    addItemProduct(item: Product)
    {
       this.product.push(item);
    }
+   getProduct(requestId: number): Product | null {
+    return this.product.find((product) => product.id === requestId) || null;
+  }
 
 }

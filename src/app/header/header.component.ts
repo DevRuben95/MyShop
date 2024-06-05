@@ -9,8 +9,9 @@ import { ShoppingcartService } from '../shopping-cart/Shopping-cart.service';
 export class HeaderComponent {
 
   constructor(private scService:ShoppingcartService) {}
-  @Output() evento = new EventEmitter<boolean>()
+  @Output() evento = new EventEmitter<void>();
 
+  @Output() menuEvento = new EventEmitter<void>();
 
    get itenCoubt():number
    {
@@ -18,6 +19,11 @@ export class HeaderComponent {
    }
   showProduct():void{
 
-    this.evento.emit(true);
+    this.evento.emit();
   }
+
+      menuCliket()
+      {
+        this.menuEvento.emit();
+      }
 }

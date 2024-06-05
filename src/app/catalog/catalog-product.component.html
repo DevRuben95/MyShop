@@ -1,10 +1,12 @@
-<div class="img-container">
+<div class="img-container" [routerLink]="[product.id]">
 <img src="/assets/items/{{product.imageUrl}}" alt="{{product.name}}" />
 </div>
 <div class="info">
-  <span
-    ><strong>{{product.name}}</strong>
+  <a class="product-name" [routerLink]="[product.id]">
+    <span>
+    <strong>{{product.name}}</strong>
   </span>
+  </a>
   <span>{{product.price}} &euro;</span>
 </div>
 <button (click)="addProduct()" title="Añadir al Carrito">

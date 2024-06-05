@@ -7,8 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  showItems:boolean = false;
+ showM:boolean= false;
+
+
   showProducto()
   {
     this.showItems=!this.showItems;
   }
+  showMenu()
+  {
+    this.showM=!this.showM;
+  }
+
+
+
 }

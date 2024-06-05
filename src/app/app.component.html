@@ -1,7 +1,10 @@
 
 
-<app-header (evento)="showProducto()"></app-header>
+<app-header (evento)="showProducto()"  (menuEvento)="showMenu()"></app-header>
 
-<app-shopping-cart  *ngIf="showItems"> </app-shopping-cart>
+<app-nav-drawer *ngIf="showM"  (eventoMostrar)="showMenu()"> </app-nav-drawer>
 
- <app-catalog> </app-catalog>
+<app-shopping-cart *ngIf="showItems"> </app-shopping-cart>
+
+ <!-- <app-catalog> </app-catalog> -->
+ <router-outlet> </router-outlet>
