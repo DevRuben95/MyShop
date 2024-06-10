@@ -1,8 +1,9 @@
-<div class="img-container" [routerLink]="[product.id]">
+<div class="img-container" (click)="navigateToProducDatail()">
+
 <img src="/assets/items/{{product.imageUrl}}" alt="{{product.name}}" />
 </div>
 <div class="info">
-  <a class="product-name" [routerLink]="[product.id]">
+  <a class="product-name" (click)="navigateToProducDatail()">
     <span>
     <strong>{{product.name}}</strong>
   </span>

@@ -13,13 +13,14 @@ import {  RouterModule, Routes } from '@angular/router';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ProductDetailsComponent } from './catalog/product-details/product-details.component';
 
+
  const routes: Routes =[
   {
     path:'catalog',
     component: CatalogComponent
   },
   {
-    path:'catalog/:id',
+    path:'catalog/products/:id',
     component: ProductDetailsComponent
   },
   {
