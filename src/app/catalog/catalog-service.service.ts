@@ -11,19 +11,19 @@ export class CatalogServiceService {
   product:Product[] =[{
     imageUrl:'audifono.jpg',
     name:'audifono',
-    price:50,
+    price:589,
     id:1
    },
    {
     imageUrl:'monitor.jpg',
     name:'monitor',
-    price:66,
+    price:10,
     id:2
    },
    {
     imageUrl:'teclado.jpg',
     name:'teclado',
-    price:589,
+    price:70,
     id:3
    },]
 

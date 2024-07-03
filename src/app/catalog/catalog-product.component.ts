@@ -25,7 +25,7 @@ export class CatalogProductComponent {
 
    navigateToProducDatail():void{
       this.router.navigate(['products',this.product.id],{relativeTo:this.route})
-      console.log(this.product);
+
    }
 
 

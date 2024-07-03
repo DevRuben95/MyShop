@@ -4,6 +4,7 @@ import { CatalogComponent } from './catalog.component';
 import { CatalogProductComponent } from './catalog-product.component';
 import { RouterModule } from '@angular/router';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CatalogRoutingModule } from './catalog-routing.module';
 
 
 
@@ -12,7 +13,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
   exports: [CatalogComponent],
   imports: [
     CommonModule,
-    RouterModule
+   CatalogRoutingModule
   ]
 })
 export class CatalogModule { }
